@@ -1,0 +1,46 @@
+<section class="bg">
+  <h2>Scroll To See Magic</h2>
+  <span class="SkewedOne"></span>
+  <span class="SkewedTwo"></span>
+</section>
+
+<section class="content">
+  <h2>Also Watch Part 1 and 2... Link in Video Description</h2>
+  <p>La baby-sitter était en retard.
+    Comme le couple sortait rarement le soir, il s’était assuré de sa disponibilité bien en amont.
+    Habitant à deux pas, elle avait déjà gardé leur enfant plusieurs fois. Ils n’en savaient pas beaucoup plus
+    sur elle ni sur sa famille, même s’ils croisaient régulièrement sa mère dans le quartier. Leur fille de
+    sept ans semblait fascinée par cette jeune et jolie femme de vingt et un ans qu’elle considérait comme
+    une grande personne. Elle ne cessait de parler des bons moments qu’elles passaient ensemble, de ses beaux
+    vêtements et des histoires merveilleuses qu’elle lui lisait le soir. La joie que manifestait leur fille à
+    l’idée de retrouver sa baby-sitter rendait ses parents moins coupables d’accepter les invitations : leur
+    enfant était entre de bonnes mains, et en plus, elle s’amusait. Il était convenu que la baby-sitter reste
+    de dix-huit heures à minuit, or il était bientôt dix-huit heures trente et ils étaient attendus pour dîner
+    à dix-neuf heures. Le mari proposa de l’appeler pour savoir ce qu’il en était, mais sa femme préférait
+    patienter : elle finirait bien par arriver.<br><br>La baby-sitter était en retard.
+    Comme le couple sortait rarement le soir, il s’était assuré de sa disponibilité bien en amont.
+    Habitant à deux pas, elle avait déjà gardé leur enfant plusieurs fois. Ils n’en savaient pas beaucoup plus
+    sur elle ni sur sa famille, même s’ils croisaient régulièrement sa mère dans le quartier. Leur fille de
+    sept ans semblait fascinée par cette jeune et jolie femme de vingt et un ans qu’elle considérait comme
+    une grande personne. Elle ne cessait de parler des bons moments qu’elles passaient ensemble, de ses beaux
+    vêtements et des histoires merveilleuses qu’elle lui lisait le soir. La joie que manifestait leur fille à
+    l’idée de retrouver sa baby-sitter rendait ses parents moins coupables d’accepter les invitations : leur
+    enfant était entre de bonnes mains, et en plus, elle s’amusait. Il était convenu que la baby-sitter reste
+    de dix-huit heures à minuit, or il était bientôt dix-huit heures trente et ils étaient attendus pour dîner
+    à dix-neuf heures. Le mari proposa de l’appeler pour savoir ce qu’il en était, mais sa femme préférait
+    patienter : elle finirait bien par arriver.</p>
+</section>
+
+<script>
+  const SkewedOne = document.querySelector('.SkewedOne');
+  const SkewedTwo = document.querySelector('.SkewedTwo');
+
+  window.addEventListener('scroll', function (){
+    const value1 = -15 + window.scrollY/45;
+    const value2 = 15 + window.scrollY/-45;
+    console.log(value1);
+    console.log(value2);
+    SkewedOne.style.transform = "skewY(" + value1 + "deg)";
+    SkewedTwo.style.transform = "skewY(" + value2 + "deg)";
+  })
+</script>
