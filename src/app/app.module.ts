@@ -6,6 +6,7 @@ import {MagicScrollComponent} from './Pages/magic-scroll/magic-scroll.component'
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './Pages/home/home.component';
 import {AnalogClockComponent} from './Pages/analog-clock/analog-clock.component';
+import { NeumorphismComponent } from './Pages/neumorphism/neumorphism.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import {AnalogClockComponent} from './Pages/analog-clock/analog-clock.component'
     HomeComponent,
     MagicScrollComponent,
     AnalogClockComponent,
+    NeumorphismComponent,
   ],
   imports: [
     BrowserModule,
