@@ -4,6 +4,7 @@ import {MagicScrollComponent} from './Pages/magic-scroll/magic-scroll.component'
 import {HomeComponent} from './Pages/home/home.component';
 import {AnalogClockComponent} from './Pages/analog-clock/analog-clock.component';
 import {NeumorphismComponent} from './Pages/neumorphism/neumorphism.component';
+import {FocusComponent} from './Pages/focus/focus.component';
 import {LoginRegistrationComponent} from './Pages/login-registration/login-registration.component';
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'MagicScroll', component: MagicScrollComponent},
   {path: 'AnalogClock', component: AnalogClockComponent},
   {path: 'Neumorphism', component: NeumorphismComponent},
+  {path: 'Focus', component: FocusComponent},
   {path: 'LoginRegistration', component: LoginRegistrationComponent},
 ];
 
