@@ -5,6 +5,7 @@ import {HomeComponent} from './Pages/home/home.component';
 import {AnalogClockComponent} from './Pages/analog-clock/analog-clock.component';
 import {NeumorphismComponent} from './Pages/neumorphism/neumorphism.component';
 import {FocusComponent} from './Pages/focus/focus.component';
+import {IsometricDesignComponent} from './Pages/isometric-design/isometric-design.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'AnalogClock', component: AnalogClockComponent},
   {path: 'Neumorphism', component: NeumorphismComponent},
   {path: 'Focus', component: FocusComponent},
+  {path: 'IsoDesign', component: IsometricDesignComponent},
 ];
 
 @NgModule({
