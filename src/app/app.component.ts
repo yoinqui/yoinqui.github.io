@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PersoProject';
+  isVisible: boolean;
+
+  public isToolbarVisible(): void {
+     this.isVisible = document.location.pathname != "/ComingSoon";
+  }
 }
