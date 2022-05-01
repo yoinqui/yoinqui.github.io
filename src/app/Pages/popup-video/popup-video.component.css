@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn .play {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #f42e79;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 25px #f42e7966;
+    transition: 0.5s;
+}
+
+.btn.active .play {
+    box-shadow: 0 0 0 150vh #f42e79;
+}
+
+.btn .play::before {
+    content: '';
+    position: absolute;
+    border: 30px solid #fff;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 0 solid transparent;
+    transform: translateX(5px);
+}
+
+.btn p {
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #999;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.clip {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.clip.active {
+    transition-delay: 0.5s;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.clip iframe {
+    margin-top: 50px;
+    width: 1200px;
+    height: 650px;
+    outline: none;
+    border: 10px solid #fff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.close {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Make the video responsive */
+
+@media (max-width: 991px) {
+    .clip iframe {
+        max-width: 90%;
+    }
+}
