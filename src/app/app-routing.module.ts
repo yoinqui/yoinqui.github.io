@@ -6,6 +6,7 @@ import {AnalogClockComponent} from './Pages/analog-clock/analog-clock.component'
 import {NeumorphismComponent} from './Pages/neumorphism/neumorphism.component';
 import {FocusComponent} from './Pages/focus/focus.component';
 import {IsometricDesignComponent} from './Pages/isometric-design/isometric-design.component';
+import { PopupVideoComponent } from './Pages/popup-video/popup-video.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'Neumorphism', component: NeumorphismComponent},
   {path: 'Focus', component: FocusComponent},
   {path: 'IsoDesign', component: IsometricDesignComponent},
+  {path: 'PopupVideo', component: PopupVideoComponent},
 ];
 
 @NgModule({
