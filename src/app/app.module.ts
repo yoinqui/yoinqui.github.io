@@ -9,6 +9,7 @@ import {AnalogClockComponent} from './Pages/analog-clock/analog-clock.component'
 import {NeumorphismComponent} from './Pages/neumorphism/neumorphism.component';
 import {FocusComponent} from './Pages/focus/focus.component';
 import { IsometricDesignComponent } from './Pages/isometric-design/isometric-design.component';
+import { PopupVideoComponent } from './Pages/popup-video/popup-video.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { IsometricDesignComponent } from './Pages/isometric-design/isometric-des
     NeumorphismComponent,
     FocusComponent,
     IsometricDesignComponent,
+    PopupVideoComponent,
   ],
   imports: [
     BrowserModule,
