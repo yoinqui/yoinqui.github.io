@@ -9,14 +9,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
 }
 
 .container {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
     background-color: #312747;
 }
 
@@ -127,6 +125,7 @@ header nav ul li a:hover {
     padding: 15px 35px;
     text-decoration: none;
     border-radius: 40px;
+    cursor: pointer;
 }
 
 .CScontainer .imgBx img {
@@ -143,4 +142,178 @@ header nav ul li a:hover {
     right: 0;
     z-index: 1;
     pointer-events: none;
+}
+
+.CScontainer .sci {
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert(1);
+}
+
+.CScontainer .sci li {
+    list-style: none;
+}
+
+.CScontainer .sci li a {
+    display: block;
+    margin-right: 20px;
+    transform: scale(0.8);
+}
+
+.newsletter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 60px;
+    background: #fff;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.outside {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(49, 39, 71, 0.95);
+    z-index: 500;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.newsletter.active,
+.outside.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.newsletter h2 {
+    font-size: 48px;
+    color: #312747;
+}
+
+.newsletter p {
+    font-size: 20px;
+    color: #312747;
+}
+
+.newsletter .inputBox {
+    margin-top: 20px;
+}
+
+.newsletter .inputBox input {
+    padding: 10px;
+    outline: none;
+    width: 300px;
+    font-size: 18px;
+    border: 1px solid #999;
+}
+
+.newsletter .inputBox input[type="Submit"] {
+    padding: 10px;
+    outline: none;
+    width: 140px;
+    color: #fff;
+    background: #ff0083;
+    border: 1px solid #ff0083;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.newsletter .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .CScontainer {
+        flex-direction: column;
+        padding-top: 150px;
+        height: auto;
+    }
+
+    .CScontainer .contentBx {
+        max-width: 100%;
+    }
+
+    .CScontainer .imgBx img {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .CScontainer {
+        flex-direction: column;
+        padding: 120px 50px 100px;
+        height: auto;
+    }
+
+    .CScontainer .contentBx h2 {
+        font-size: 40px;
+    }
+
+    .CScontainer .contentBx p {
+        font-size: 16px;
+    }
+
+    .CScontainer .contentBx .countdown .time {
+        font-size: 30px;
+        min-height: 70px;
+        margin-right: 5px;
+    }
+
+    .CScontainer .contentBx .countdown .time span{
+        font-size: 14px;
+    }
+
+    .CScontainer .contentBx a {
+        position: relative;
+        margin-top: 10px;
+        display: inline-block;
+        color: #fff;
+        background: #ff0083;
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 10px 25px;
+        text-decoration: none;
+        border-radius: 40px;
+    }
+
+    .CScontainer .sci {
+        left: 50px;
+    }
+
+    .newsletter {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .newsletter .inputBox input {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .newsletter h2 {
+        font-size: 36px;
+        color: #312747;
+    }
 }

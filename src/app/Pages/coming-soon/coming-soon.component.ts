@@ -38,4 +38,11 @@ export class ComingSoonComponent implements OnInit {
     document.getElementById('minute').innerText = m < 10 ? "0" + m.toString() : m.toString();
     document.getElementById('second').innerText = s < 10 ? "0" + s.toString() : s.toString();
   }
+
+  public toggle(): void {
+    var newsletter = document.querySelector('.newsletter');
+    var outside = document.querySelector('.outside');
+    newsletter.classList.toggle('active');
+    outside.classList.toggle('active');
+  }
 }
