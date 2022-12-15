@@ -88,11 +88,15 @@ section {
 
 .clip iframe {
     margin-top: 50px;
-    width: 1200px;
-    height: 650px;
+    width: 80%;
+    height: 80%;
     outline: none;
     border: 10px solid #fff;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.clip iframe.desactive {
+    display: none;
 }
 
 .close {
