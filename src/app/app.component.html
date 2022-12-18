@@ -1,125 +1,89 @@
-<!-- Toolbar -->
-<div class="toolbar" role="banner" *ngIf="isVisible">
-  <img alt="Angular Logo" class="home" routerLink="/"
-    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
-    width="40" />
+<!-- ### SIDEBAR MENU ### -->
 
-  <span>{{title}}</span>
-
-  <div class="spacer"></div>
-  <!--Coming Soon-->
-  <div class="card-container">
-    <a class="card" rel="noopener" style="width: 9rem; height: 1rem;" routerLink="/ComingSoon">
-      <!--Icon-->
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
-      </svg>
-
-      <span>Coming Soon</span>
-
-      <!--Cheveron flèche ">"-->
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-      </svg>
-    </a>
+<div class="sidebar open" id="sidebar">
+  <div class="logo-details">
+    <i class='bx bxs-analyse bx-spin icon' id="WebsiteLogo" routerLink="/"></i>
+    <div class="logo_name">Macaron's Project</div>
+    <i class='bx bx-menu-alt-right' id="menuBtn"></i>
   </div>
-  <!--Popup Video-->
-  <div class="card-container">
-    <a class="card" rel="noopener" style="width: 9rem; height: 1rem;" routerLink="/PopupVideo">
-      <!--Icon-->
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
-      </svg>
+  <ul class="nav-list" id="nav-list">
+    <li>
+      <i class='bx bx-search' id="searchBtn"></i>
+      <input type="text" placeholder="Search...">
+      <span class="tooltip">Search</span>
+    </li>
+    <li id="ComingSoon">
+      <a routerLink="/ComingSoon">
+        <i class='bx bx-rocket' id="classic"></i>
+        <i class='bx bxs-rocket disable' id="active"></i>
+        <span class="links_name">Coming Soon</span>
+      </a>
+      <span class="tooltip">Coming Soon</span>
+    </li>
+    <li id="PopupVideo">
+      <a routerLink="/PopupVideo">
+        <i class='bx bx-camera-movie' id="classic"></i>
+        <i class='bx bxs-camera-movie disable' id="active"></i>
+        <span class="links_name">Popup Video</span>
+      </a>
+      <span class="tooltip">Popup Video</span>
+    </li>
+    <li id="IsoDesign">
+      <a routerLink="/IsoDesign">
+        <i class='bx bx-layer' id="classic"></i>
+        <i class='bx bxs-layer disable' id="active"></i>
+        <span class="links_name">Isometric Design</span>
+      </a>
+      <span class="tooltip">Isometric Design</span>
+    </li>
+    <li id="Focus" class="actived">
+      <a routerLink="/Focus">
+        <i class='bx bx-camera disable' id="classic"></i>
+        <i class='bx bxs-camera' id="active"></i>
+        <span class="links_name">Focus</span>
+      </a>
+      <span class="tooltip">Focus</span>
+    </li>
+    <li id="Neumorphism">
+      <a routerLink="/Neumorphism">
+        <i class='bx bx-bar-chart-alt-2' id="classic"></i>
+        <i class='bx bxs-bar-chart-alt-2 disable' id="active"></i>
+        <span class="links_name">Neumorphism</span>
+      </a>
+      <span class="tooltip">Neumorphism</span>
+    </li>
+    <li id="AnalogClock">
+      <a routerLink="/AnalogClock">
+        <i class='bx bx-alarm' id="classic"></i>
+        <i class='bx bxs-alarm disable' id="active"></i>
+        <span class="links_name">AnalogClock</span>
+      </a>
+      <span class="tooltip">AnalogClock</span>
+    </li>
+    <li id="MagicScroll">
+      <a routerLink="/MagicScroll">
+        <i class='bx bx-mouse' id="classic"></i>
+        <i class='bx bxs-mouse disable' id="active"></i>
+        <span class="links_name">MagicScroll</span>
+      </a>
+      <span class="tooltip">MagicScroll</span>
+    </li>
 
-      <span>Popup Video</span>
-
-      <!--Cheveron flèche ">"-->
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-      </svg>
-    </a>
-  </div>
-  <!--Isometric Design-->
-  <div class="card-container">
-    <a class="card" rel="noopener" style="width: 11rem; height: 1rem;" routerLink="/IsoDesign">
-      <!--Icon-->
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
-      </svg>
-
-      <span>Isometric Design</span>
-
-      <!--Cheveron flèche ">"-->
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-      </svg>
-    </a>
-  </div>
-  <!--Focus-->
-  <div class="card-container">
-    <a class="card" rel="noopener" style="width: 6rem; height: 1rem;" routerLink="/Focus">
-      <!--Icon-->
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
-      </svg>
-
-      <span>Focus</span>
-
-      <!--Cheveron flèche ">"-->
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-      </svg>
-    </a>
-  </div>
-  <!--Neumorphism-->
-  <div class="card-container">
-    <a class="card" rel="noopener" style="width: 9rem; height: 1rem;" routerLink="/Neumorphism">
-      <!--Icon-->
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
-      </svg>
-
-      <span>Neumorphism</span>
-
-      <!--Cheveron flèche ">"-->
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-      </svg>
-    </a>
-  </div>
-  <!--AnalogClock-->
-  <div class="card-container">
-    <a class="card" rel="noopener" style="width: 9rem; height: 1rem;" routerLink="/AnalogClock">
-      <!--Icon-->
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
-      </svg>
-
-      <span>AnalogClock</span>
-
-      <!--Cheveron flèche ">"-->
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-      </svg>
-    </a>
-  </div>
-  <!--MagicScroll-->
-  <div class="card-container">
-    <a class="card" rel="noopener" style="width: 8rem; height: 1rem;" routerLink="/MagicScroll">
-      <!--Icon-->
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
-      </svg>
-
-      <span>MagicScroll</span>
-
-      <!--Cheveron flèche ">"-->
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-      </svg>
-    </a>
-  </div>
+    <!-- ################### PROFILE ################### -->
+    <li class="profile">
+      <div class="profile-details" id="profile-details">
+        <img src="./assets/img/PP.jpg" alt="profileImg">
+        <div class="name_job">
+          <div class="name">INQUIMBERT Yoann</div>
+          <div class="job">Analyste développeur</div>
+        </div>
+      </div>
+      <i class='bx bx-log-out' id="log_out"></i>
+    </li>
+  </ul>
 </div>
+
+<!-- ### END SIDEBAR MENU ### -->
 
 <div class="content" role="main">
   <router-outlet (activate)="isToolbarVisible()"></router-outlet>
