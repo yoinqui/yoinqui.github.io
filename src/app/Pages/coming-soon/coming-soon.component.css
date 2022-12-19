@@ -180,7 +180,6 @@ header nav ul li a:hover {
 
 .newsletter {
     position: absolute;
-    
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
