@@ -7,7 +7,7 @@ import { timer } from 'rxjs';
   styleUrls: ['./coming-soon.component.css']
 })
 export class ComingSoonComponent implements OnInit {
-  countDate = new Date('Jan 1, 2023 00:00:00').getTime();
+  countDate = new Date('Jan 1, 2024 00:00:00').getTime();
 
   constructor() {
   }
