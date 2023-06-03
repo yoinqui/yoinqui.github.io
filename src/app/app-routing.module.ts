@@ -8,6 +8,7 @@ import { FocusComponent } from './Pages/focus/focus.component';
 import { IsometricDesignComponent } from './Pages/isometric-design/isometric-design.component';
 import { PopupVideoComponent } from './Pages/popup-video/popup-video.component';
 import { ComingSoonComponent } from './Pages/coming-soon/coming-soon.component';
+import { BuildingLuminosityComponent } from './Pages/building-luminosity/building-luminosity.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'IsoDesign', component: IsometricDesignComponent },
   { path: 'PopupVideo', component: PopupVideoComponent },
   { path: 'ComingSoon', component: ComingSoonComponent },
+  { path: 'BuildingLuminosity', component: BuildingLuminosityComponent },
 ];
 
 @NgModule({
