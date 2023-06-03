@@ -12,6 +12,7 @@ import { IsometricDesignComponent } from './Pages/isometric-design/isometric-des
 import { PopupVideoComponent } from './Pages/popup-video/popup-video.component';
 import { ComingSoonComponent } from './Pages/coming-soon/coming-soon.component';
 import { BuildingLuminosityComponent } from './Pages/building-luminosity/building-luminosity.component';
+import { BottonsAnimationComponent } from './Pages/bottons-animation/bottons-animation.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { BuildingLuminosityComponent } from './Pages/building-luminosity/buildin
     PopupVideoComponent,
     ComingSoonComponent,
     BuildingLuminosityComponent,
+    BottonsAnimationComponent,
   ],
   imports: [
     BrowserModule,

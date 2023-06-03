@@ -1,9 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
-body{
+body {
   margin: 0;
   background: #323232;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+:root {
+  --primary: #275EFE;
+  --primary-light: #7699FF;
+  --dark: #1C212E;
+  --grey-dark: #3F4656;
+  --grey: #6C7486;
+  --grey-light: #CDD9ED;
+  --white: #FFF;
+  --green: #16BF78;
+  --sand: #DCB773;
+  --sand-light: #EDD9A9;
+  --hue: 223;
+  --bg: hsl(var(--hue), 90%, 90%);
+  --fg: hsl(var(--hue), 90%, 10%);
+  --danger: hsl(3, 90%, 45%);
+  --danger-down: hsl(3, 90%, 65%);
+  --white: hsl(0, 0%, 100%);
+  --trans-dur: 0.3s;
+  --fuschia: #ff0081;
+  --button-bg: var(--fuschia);
+  --button-text-color: #fff;
+  --baby-blue: #f8faff;
+  font-size: calc(20px + (40 - 20) * (100vw - 320px) / (2560 - 320));
 }
