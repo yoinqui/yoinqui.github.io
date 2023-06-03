@@ -1,0 +1,39 @@
+.container {
+    margin-left: 25px;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.spotify-embeds {
+    width: 90%;
+    padding: 50px;
+}
+
+
+.spotify-embeds .spotify-embed {
+    &:not(:last-of-type) {
+        margin-bottom: 5px;
+    }
+
+}
+
+.spotify-embeds .spotify-embed iframe {
+    display: block;
+    transition: opacity 0.125s;
+
+    .js & {
+        opacity: 0;
+
+        &.loaded {
+            opacity: 1;
+        }
+    }
+}
