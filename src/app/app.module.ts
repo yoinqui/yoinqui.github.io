@@ -13,6 +13,7 @@ import { PopupVideoComponent } from './Pages/popup-video/popup-video.component';
 import { ComingSoonComponent } from './Pages/coming-soon/coming-soon.component';
 import { BuildingLuminosityComponent } from './Pages/building-luminosity/building-luminosity.component';
 import { BottonsAnimationComponent } from './Pages/bottons-animation/bottons-animation.component';
+import { MusicPlaylistComponent } from './Pages/music-playlist/music-playlist.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { BottonsAnimationComponent } from './Pages/bottons-animation/bottons-ani
     ComingSoonComponent,
     BuildingLuminosityComponent,
     BottonsAnimationComponent,
+    MusicPlaylistComponent,
   ],
   imports: [
     BrowserModule,
