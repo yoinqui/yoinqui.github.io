@@ -10,6 +10,7 @@ import { PopupVideoComponent } from './Pages/popup-video/popup-video.component';
 import { ComingSoonComponent } from './Pages/coming-soon/coming-soon.component';
 import { BuildingLuminosityComponent } from './Pages/building-luminosity/building-luminosity.component';
 import { BottonsAnimationComponent } from './Pages/bottons-animation/bottons-animation.component';
+import { MusicPlaylistComponent } from './Pages/music-playlist/music-playlist.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'ComingSoon', component: ComingSoonComponent },
   { path: 'BuildingLuminosity', component: BuildingLuminosityComponent },
   { path: 'BottonsAnimation', component: BottonsAnimationComponent },
+  { path: 'MusicPlaylist', component: MusicPlaylistComponent },
 ];
 
 @NgModule({
