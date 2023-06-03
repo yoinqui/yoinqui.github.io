@@ -11,6 +11,7 @@ import { FocusComponent } from './Pages/focus/focus.component';
 import { IsometricDesignComponent } from './Pages/isometric-design/isometric-design.component';
 import { PopupVideoComponent } from './Pages/popup-video/popup-video.component';
 import { ComingSoonComponent } from './Pages/coming-soon/coming-soon.component';
+import { BuildingLuminosityComponent } from './Pages/building-luminosity/building-luminosity.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ComingSoonComponent } from './Pages/coming-soon/coming-soon.component';
     IsometricDesignComponent,
     PopupVideoComponent,
     ComingSoonComponent,
+    BuildingLuminosityComponent,
   ],
   imports: [
     BrowserModule,
